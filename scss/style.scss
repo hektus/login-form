@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100vh;
+}
+
+.login__box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 2px black;
+  border-radius: 20px;
+  height: 60vh;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+
+  h2 {
+    font-size: 50px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+}
+
+.login__input-box {
+  position: relative;
+  margin: 10px;
+  border-bottom: 2px solid white;
+
+  label {
+    position: absolute;
+    left: 5px;
+    pointer-events: none;
+  }
+}
