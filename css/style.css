@@ -11,7 +11,9 @@ form {
 
 .page {
   height: 100vh;
-  background-color: black;
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .login__box {
@@ -26,7 +28,8 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
 }
 .login__box h2 {
   font-size: 50px;
@@ -57,6 +60,7 @@ form {
   outline: none;
   font-size: 18px;
   color: white;
+  padding: 5px;
 }
 .login__input-box input:focus ~ label,
 .login__input-box input:valid ~ label {
@@ -69,4 +73,45 @@ form {
   right: 5px;
   color: white;
   font-size: 18px;
+}
+
+.login__forgot-remember {
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.login__forgot-remember a {
+  color: white;
+  text-decoration: none;
+}
+.login__forgot-remember a:hover {
+  font-weight: bold;
+}
+.login__forgot-remember label input {
+  margin-right: 5px;
+}
+
+.login__btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.register {
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+}
+.register a {
+  color: white;
+  text-decoration: none;
+}
+.register a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
